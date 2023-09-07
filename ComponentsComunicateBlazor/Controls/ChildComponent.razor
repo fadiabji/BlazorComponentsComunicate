@@ -1,0 +1,17 @@
+﻿
+@if (Display)
+{
+    <h3>Child Component</h3>
+}
+
+@code {
+    private bool Display;
+
+
+    public void Show()
+    {
+        this.Display = true;
+        // when we click the button in the counter component the status will change
+        StateHasChanged();
+    }
+}
